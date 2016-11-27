@@ -1,0 +1,145 @@
+/* this cover the main elements of all the pages, keeping the design
+   elements in one place for the repeated bits*/
+html {
+  font-size: 100%;
+}
+body {
+  background-color: transparent;
+}
+
+div {
+
+}
+
+.wrap {
+
+}
+
+/*dynamic grid bits*/
+
+#content {
+  width: auto;
+  margin: 0 auto;
+}
+
+/*clearfix*/
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.item {
+  display: block;
+  float: left;
+  width: 300px;
+  height: 200px;
+  border: solid;
+  border-width: thin;
+  border-radius: 3px;
+  margin: 0 0px 0px 0;
+  text-align: center;
+  transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+}
+
+.itemW1 {width: 150px;}
+.itemW2 {width: 380px;}
+.itemW3 {width: 420px;}
+
+.itemH1 {height: 250px;}
+.itemH2 {height: 300px;}
+.itemH3 {height: 450px;}
+
+.item-hover img {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.item:hover .item-hover img {
+  opacity: 1;
+
+}
+
+/*wraps the navigation element at top of page*/
+.container-fluid {
+  margin: 0px 100px;
+  padding: 65px 30px 0px 30px;
+}
+
+.grid-custom .row {
+  height: 500px;
+  width: 100%;
+  border: solid;
+}
+
+.box {
+
+}
+
+.logo {
+  /*float: left;
+  padding-top: 20px;
+  display: inline;*/
+}
+
+.nav {
+  /*border-style: groove;
+  border-color: orange;
+  float: right;
+  clear: both;
+  display: inline;*/
+}
+
+.nav ul {
+  list-style: none;
+  display: inline;
+}
+
+.nav ul li {
+  float: right;
+  margin: 0px 10px;
+  padding: 10px;
+  border: solid;
+  border-color: transparent;
+}
+
+.nav ul li a {
+  text-decoration: none;
+}
+
+.nav ul li:hover {
+  border: solid;
+  border-top-color: #800;
+  border-right-color: white;
+  border-bottom-color: #800;
+  border-left-color: white;
+}
+
+/*styles the main text image in middle of page */
+.welcome {
+  /*border-style: inset;
+  border-color: blue;*/
+  display: flex;
+  height: 400px;
+
+
+}
+
+.welcome-text {
+  margin: auto;
+  font-size: 70px;
+}
+
+/* all the project bits, including the tab are in tab.css*/
+.projects {
+}
+
+.projects-text {
+  text-align: center;
+}
+
+.about {
+  display: inline;
+  border-style: inset;
+  border-color: green
+}
